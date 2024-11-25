@@ -1,1 +1,0 @@
-# mammoth-vl.github.io
