@@ -174,7 +174,7 @@
 
                                 <!-- Github link -->
                                 <span class="link-block">
-                      <a href="https://github.com/TIGER-AI-Lab/MAmmoTH2" target="_blank"
+                      <a href="https://github.com/MAmmoTH-VL" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fab fa-github"></i>
@@ -213,27 +213,27 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            Multimodal Large Language Models (MLLMs) have integrated modality alignment and visual instruction tuning to excel in tasks like captioning and visual question-answering. Despite their potential, MLLMs often struggle with real-world applications due to the homogeneity and simplicity of training datasets. Addressing these challenges, we propose a simple, scalable yet effective approach that leverages open-source models for synthesizing high-quality, diverse instruction training data, aligning closely with human preferences and complex real-world scenarios. We introduce the MAmmoTH-VL-12M dataset, a collection of 12 million multimodal instructions, across 12 task domains. Experimental results show that training an MLLM, MAmmoTH-VL-8B on this dataset enhances performance in various visual reasoning, OCR, chart understanding, document understanding, and interaction tasks. Our method demonstrates a cost-effective alternative for high-quality multimodal data creation in the open-source community.                        </p>
+                            Multimodal Large Language Models (MLLMs) have integrated modality alignment and visual instruction tuning to excel in tasks like captioning and visual question-answering. Despite their potential, MLLMs often struggle with real-world applications due to the homogeneity and simplicity of training datasets. Addressing these challenges, we propose a simple, scalable yet effective approach that leverages open-source models for synthesizing high-quality, diverse instruction training data, aligning closely with human preferences and complex real-world scenarios. We introduce the MAmmoTH-VL-12M dataset, a collection of 12 million multimodal instructions, across 10 task-specific categories. Experimental results show that training an MLLM, MAmmoTH-VL-8B on this dataset enhances performance in various visual reasoning, OCR, chart understanding, document understanding, and interaction tasks. Our method demonstrates a cost-effective alternative for high-quality multimodal data creation in the open-source community.                        </p>
 
 <p>
     <!-- Image1 carousel -->
         
-    <section class="hero">
+    <!-- <section class="hero">
         <div class="hero-body">
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
-                    <div class="column is-four-fifths">
+                    <div class="column is-four-fifths"> -->
                         <div class="item">
-                            <img src="static/images/mammoth_vl_method.jpg" alt="Hybrid Instruction Tuning of MAmmoTH2-Plus" style="width: 100%; height: auto;" />
+                            <img src="static/images/mammoth_vl_overview.png" alt="Hybrid Instruction Tuning of MAmmoTH2-Plus" style="width: 100%; height: auto;" />
                             <h2 class="subtitle" style="font-size: 16px; text-align: center; color: #888888;font-weight: normal;">
                                 Figure 1: Overview of MAmmoTH-VL.
                             </h2>
                         </div>
-                    </div>
+                    <!-- </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     
     <!-- End image1 carousel -->
     
@@ -321,11 +321,11 @@
                         </p>
 <!-- Image3 carousel -->
     
-<section class="hero">
+<!-- <section class="hero">
     <div class="hero-body">
         <div class="container is-max-desktop">
             <div class="columns is-centered">
-                <div class="column is-four-fifths">
+                <div class="column is-four-fifths"> -->
                     <div class="item">
                         <!-- Displaying an Image of Hybrid Instruction Tuning -->
                         <img src="static/images/mammoth_vl_12M.png" alt="Hybrid Instruction Tuning of MAmmoTH2-Plus" style="width: 100%; height: auto;" />
@@ -333,11 +333,11 @@
                             Figure 2: Overview of MAmmoTH-VL-12M.
                         </h2>
                     </div>
-                </div>
+                <!-- </div>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 <section class="hero">
@@ -982,23 +982,23 @@
                             To further investigate the impact of dataset size on model performance, we analyze the Stage-2 training stage for single-image. Figure 3 shows the model's overall performance across 8 benchmarks as the training dataset size increases, with each node representing 2 million data points. The results are compared against those of Qwen2-VL-8B, InternVL2-8B, and LLaVA-OneVision-8B. This trend clearly demonstrates that expanding the scale of instruction data has a significant positive effect on model performance. This observation suggests that as more diverse instruction data is introduced, the model’s ability to handle complex tasks is enhanced.
                         </p>
 
-<section class="hero">
+<!-- <section class="hero">
     <div class="hero-body">
         <div class="container is-max-desktop">
             <div class="columns is-centered">
-                <div class="column is-four-fifths">
+                <div class="column is-four-fifths"> -->
                     <div class="item">
                         <!-- Displaying an Image of Hybrid Instruction Tuning -->
-                        <img src="static/images/mammoth_scale.png" alt="Hybrid Instruction Tuning of MAmmoTH2-Plus" style="width: 100%; height: auto;" />
+                        <img src="static/images/mammoth_vl_scale.png" alt="Hybrid Instruction Tuning of MAmmoTH2-Plus" style="width: 100%; height: auto;" />
                         <h2 class="subtitle" style="font-size: 16px; text-align: center; color: #888888;font-weight: normal;">
                             Figure 3: Scaling effect of MAmmoTH-VL-8B on 8 representative datasets.
                         </h2>
                     </div>
-                </div>
+                <!-- </div>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 <section class="hero">
@@ -1017,11 +1017,11 @@
                             The results in Figure 4 show that model trained on data rewritten based on 7B-similar-size model performs better in knowledge & reasoning and multi-interact & preference compared to the original data. However, its performance in chart & doc tasks is slightly worse, which may be due to the small model's inherent limitations in recognizing fine details in document-like images.
                         </p>
 
-<section class="hero">
+<!-- <section class="hero">
     <div class="hero-body">
         <div class="container is-max-desktop">
             <div class="columns is-centered">
-                <div class="column is-four-fifths">
+                <div class="column is-four-fifths"> -->
                     <div class="item">
                         <!-- Displaying an Image of Hybrid Instruction Tuning -->
                         <img src="static/images/ablation_rewrite_model.png" alt="Hybrid Instruction Tuning of MAmmoTH2-Plus" style="width: 100%; height: auto;" />
@@ -1029,11 +1029,11 @@
                             Figure 4: Performance of data rewritten by different models on three benchmark subsets.
                         </h2>
                     </div>
-                </div>
+                <!-- </div>
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- End image3 carousel -->
 
