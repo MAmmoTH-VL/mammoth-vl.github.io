@@ -100,35 +100,35 @@
                     <div class="column has-text-centered">
                         <!-- <h1 class="title is-1 publication-title">🦣 MAmmoTH-VL: <br>Scaling Synthetic Multimodal Instruction Data with Open Models</h1> -->
                         <h1 class="title is-1 publication-title">
-                            <img src="static/images/mammoth_vl.png" alt="Mammoth Icon" style="vertical-align: -2px; width: 60px; height: 40px;"> MAmmoTH-VL: <br>Scaling Synthetic Multimodal Instruction Data with Open Models
+                            <img src="static/images/mammoth_vl.png" alt="Mammoth Icon" style="vertical-align: -2px; width: 60px; height: 40px;"> MAmmoTH-VL: <br>Eliciting Multimodal Reasoning with Instruction Tuning at Scale
                           </h1>
                           
                         <div class="is-size-5 publication-authors">
                             <!-- Paper authors -->
                 <span class="author-block">
-                    <sup>1</sup><a href="" target="_blank">Jarvis Guo</a><sup>*</sup>,</span>
+                    <a href="" target="_blank">Jarvis Guo</a><sup>♣*</sup>,</span>
                 <span class="author-block">
-                    <sup>1</sup><a href="" target="_blank">Tuney Zheng</a><sup>*</sup>,</span>
+                    <a href="" target="_blank">Tuney Zheng</a><sup>♣*</sup>,</span>
                 <span class="author-block">
-                        <sup>1</sup><a href="" target="_blank">Yuelin Bai</a>,</span>
+                        <a href="" target="_blank">Yuelin Bai</a><sup>♣</sup>,</span>
                 <span class="author-block">
-                        <sup>3</sup><a href="" target="_blank">Bo Li</a>
+                        <a href="" target="_blank">Bo Li</a><sup>△</sup>
                 </span>
                 <br>
                 <span class="author-block">
-                    <sup>4</sup><a href="" target="_blank">Yubo Wang</a>,</span>
+                    <a href="" target="_blank">Yubo Wang</a><sup>♡</sup>,</span>
                 <span class="author-block">
-                    <sup>1</sup><a href="" target="_blank">King Zhu</a>,</span>
+                    <a href="" target="_blank">King Zhu</a><sup>♣</sup>,</span>
                 <span class="author-block">
-                    <sup>5</sup><a href="" target="_blank">Yizhi Li</a>,
+                    <a href="" target="_blank">Yizhi Li</a><sup>♢</sup>,
                 </span>
                 <br>
                 <span class="author-block">
-                    <sup>2</sup><a href="" target="_blank">Graham Neubig</a>,</span>
+                    <a href="" target="_blank">Graham Neubig</a><sup>♠</sup>,</span>
                 <span class="author-block">
-                    <sup>4</sup><a href="https://wenhuchen.github.io/" target="_blank">Wenhu Chen</a>,</span>
+                    <a href="https://wenhuchen.github.io/" target="_blank">Wenhu Chen</a><sup>♡</sup>,</span>
                 <span class="author-block">
-                    <sup>2</sup><a href="https://xiangyue9607.github.io/" target="_blank">Xiang Yue</a>,
+                    <a href="https://xiangyue9607.github.io/" target="_blank">Xiang Yue</a><sup>♠†</sup>,
                 </span>
                         </div>
 
@@ -136,12 +136,12 @@
 
                 <div class="is-size-5 publication-authors">
                     <span class="author-block">
-                        <sup>1</sup>M-A-P,
-                        <sup>2</sup>Carnegie Mellon University,
-                        <sup>3</sup>Nanyang Technological University,
+                        <sup>♠</sup>Carnegie Mellon University,
+                        <sup>♣</sup>M-A-P,
+                        <sup>△</sup>Nanyang Technological University,
                         <br>
-                        <sup>4</sup>University of Waterloo,
-                        <sup>5</sup>The University of Manchester
+                        <sup>♡</sup>University of Waterloo,
+                        <sup>♢</sup>The University of Manchester
                         <br>
                     <!-- <span class="eql-cntrb"><small><sup>*</sup>Xiang Yue and Wenhu Chen are the leading authors of the project. They contributed equally to this project.</small></span> -->
                             <span class="author-block"><a href="mailto:xyue2@andrew.cmu.edu">xyue2@andrew.cmu.edu</a>
@@ -221,10 +221,9 @@
                 <div class="column has-text-centered">
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
-                        <p>
-                            Multimodal Large Language Models (MLLMs) have integrated modality alignment and visual instruction tuning to excel in tasks like captioning and visual question-answering. Despite their potential, MLLMs often struggle with real-world applications due to the homogeneity and simplicity of training datasets. Addressing these challenges, we propose a simple, scalable yet effective approach that leverages open-source models for synthesizing high-quality, diverse instruction training data, aligning closely with human preferences and complex real-world scenarios. We introduce the MAmmoTH-VL-12M dataset, a collection of 12 million multimodal instructions, across 10 task-specific categories. Experimental results show that training an MLLM, MAmmoTH-VL-8B on this dataset enhances performance in various visual reasoning, OCR, chart understanding, document understanding, and interaction tasks. Our method demonstrates a cost-effective alternative for high-quality multimodal data creation in the open-source community.                        </p>
-
-<p>
+                            <p>
+                                Open-source multimodal large language models (MLLMs) have shown significant potential in a broad range of multimodal tasks. However, their reasoning capabilities remain constrained by existing instruction-tuning datasets, which were predominately repurposed from academic datasets such as VQA, AI2D, and ChartQA. These datasets target simplistic tasks, and only provide phrase-level answers without any intermediate rationales. To address these challenges, we introduce a \textit{scalable and cost-effective method} to construct a \textit{large-scale multimodal instruction-tuning dataset with rich intermediate rationales designed to elicit CoT reasoning}. Using only open models, we create a dataset containing 12M instruction-response pairs to cover diverse, reasoning-intensive tasks with detailed and faithful rationales. Experiments demonstrate that training MLLMs on this dataset significantly improves reasoning capabilities, achieving state-of-the-art performance on benchmarks such as MathVerse (+8.1%), MMMU-Pro (+7%), and MuirBench (+13.3%). Additionally, the model demonstrates notable improvements of up to 4% on non-reasoning-based benchmarks. Ablation studies further highlight the importance of key components, such as rewriting and self-filtering, in the dataset construction process.
+                            <p>
     <!-- Image1 carousel -->
         
     <!-- <section class="hero">
@@ -234,8 +233,8 @@
                     <div class="column is-four-fifths"> -->
                         <div class="item">
                             <img src="static/images/mammoth_vl_overview.png" alt="Hybrid Instruction Tuning of MAmmoTH2-Plus" style="width: 100%; height: auto;" />
-                            <h2 class="subtitle" style="font-size: 16px; text-align: center; color: #888888;font-weight: normal;">
-                                Figure 1: Overview of MAmmoTH-VL.
+                            <h2 class="subtitle" style="font-size: 16px; color: #888888;font-weight: normal;">
+                                Figure 1: Up shows overview of our simple but scalable visual instruction data rewriting pipeline, comprising three main steps. First, we manually collect and identify potential data sources. Second, we rewrite the original instruction data using open MLLMs and LLMs. Finally, we employ the same MLLM as a judge to filter the data. Below shows examples comparing pre- and post-rewriting results in two categories: Math and Caption, demonstrating how the pipeline transforms basic questions into detailed, step-by-step responses.
                             </h2>
                         </div>
                     <!-- </div>
@@ -317,16 +316,16 @@
                     
                     <div class="content has-text-justified">
                         <p>
-                            Existing efforts have demonstrated the potential of visual instruction tuning, they often rely on resource-intensive approaches, such as human annotations or proprietary models, limiting their scalability and accessibility, especially in open-source contexts. To solve this, we present a simple, scalable, and cost-effective data generation pipeline to construct 12M high-quality samples. Our approach includes three key steps: 
+                            While previous efforts have highlighted the potential of visual instruction tuning, many rely on resource-intensive methods such as human annotations or proprietary models. These approaches limit scalability and accessibility, particularly in open-source contexts. To address these challenges, we introduce a simple, scalable, and cost-effective data generation pipeline that produces 12 million high-quality samples. Our pipeline involves three key steps:    
                         </p>
                         <p>
-                            (1) comprehensive open-source data curation and categorization
+                            (1) open-source data collection and categorization
                         </p>
                         <p>
-                            (2) task-aware data augmentation and rewriting with open models
+                            (2) task-specific data augmentation and rewriting using open models
                         </p>
                         <p>
-                            (3) rigorous quality filtering to eliminate hallucinated or irrelevant content. 
+                            (3) quality filtering to remove hallucinated or irrelevant content
                         </p>
 <!-- Image3 carousel -->
     
@@ -339,7 +338,7 @@
                         <!-- Displaying an Image of Hybrid Instruction Tuning -->
                         <img src="static/images/mammoth_vl_12M.png" alt="Hybrid Instruction Tuning of MAmmoTH2-Plus" style="width: 100%; height: auto;" />
                         <h2 class="subtitle" style="font-size: 16px; text-align: center; color: #888888;font-weight: normal;">
-                            Figure 2: Overview of MAmmoTH-VL-12M.
+                            Figure 2: The data distribution of MAmmoTH-VL-Instruct (12M). Left: Category distribution. Right: Details of data sources.
                         </h2>
                     </div>
                 <!-- </div>
@@ -359,7 +358,7 @@
                     
                     <div class="content has-text-justified">
                         <p>
-                            To reveal the generality and effectiveness of model, we comprehensively evaluate our model across different modalities, including single-image, multi-image, and video benchmarks.We denote the model checkpoint trained after the single-image stage and one-vision stage as MAmmoTH-VL-8B(SI) and MAmmoTH-VL-8B.We conduct standardized, reproducible evaluations of our model across all benchmarks using LMMs-Eval. To ensure a fair comparison with other MLLMs, we primarily report results from the original papers. When results are unavailable, we onboard the models in LMMs-Eval and evaluate them using consistent settings. All results are reported using greedy decoding and zero-shot settings unless otherwise specified.    
+                            To reveal the generality and effectiveness of the model, we comprehensively evaluate it across different scenarios, including single-image, multi-image, and video benchmarks. Detailed results are presented in Table 1, Table 2 and Table 3, respectively. We denote the model checkpoint that completed the single-image stage and one-vision stage as MAmmoTH-VL-8B (SI) and MAmmoTH-VL-8B. We conduct standardized, reproducible evaluations of our model across all 23 benchmarks using LMMs-Eval. To ensure a fair comparison with other MLLMs, we primarily report results from the original papers. When results are unavailable, we onboard the models in LMMs-Eval and evaluate them using consistent settings. All results are reported using greedy decoding and zero-shot settings unless specified.
                         </p>
 <!-- Image3 carousel -->
 
@@ -394,17 +393,6 @@
             <td style="text-align: center;">50.2</td>
             <td style="text-align: center;">63.8</td>
         </tr>
-        <!-- <tr style="background-color: #f2f2f2;">
-            <td>GPT-4v</td>
-            <td style="text-align: center;">57.1</td>
-            <td style="text-align: center;">56.8</td>
-            <td style="text-align: center;">-</td>
-            <td style="text-align: center;">49.9</td>
-            <td style="text-align: center;">77.0</td>
-            <td style="text-align: center;">58.6</td>
-            <td style="text-align: center;">32.8</td>
-            <td style="text-align: center;">49.9</td>
-        </tr> -->
         <tr style="background-color: #f2f2f2;">
             <td>Gemini-1.5-Pro</td>
             <td style="text-align: center;">59.1</td>
@@ -453,7 +441,7 @@
             <td style="text-align: center;">70.5</td>
         </tr>
         <tr style="background-color: #e0f7e0;">
-            <td>LLaVA-OV-72B(Single Image)</td>
+            <td>LLaVA-OV-72B (SI)</td>
             <td style="text-align: center;">65.2</td>
             <td style="text-align: center;">57.4</td>
             <td style="text-align: center;">26.0</td>
@@ -500,6 +488,17 @@
             <td style="text-align: center;">59.6</td>
         </tr>
         <tr style="background-color: #cce0ff;">
+            <td>Llama-3.2-11B-Vision-Ins</td>
+            <td style="text-align: center;">49.8</td>
+            <td style="text-align: center;">50.7</td>
+            <td style="text-align: center;">23.7</td>
+            <td style="text-align: center;">72.7</td>
+            <td style="text-align: center;">73.2</td>
+            <td style="text-align: center;">57.6</td>
+            <td style="text-align: center;">23.6</td>
+            <td style="text-align: center;">51.5</td>
+        </tr>
+        <tr style="background-color: #cce0ff;">
             <td>InternVL-2-8B</td>
             <td style="text-align: center;">59.4</td>
             <td style="text-align: center;">49.3</td>
@@ -511,7 +510,7 @@
             <td style="text-align: center;">58.3</td>
         </tr>
         <tr style="background-color: #cce0ff;">
-            <td>Qwen2-VL-7B</td>
+            <td>Qwen2-VL-7B-Ins</td>
             <td style="text-align: center;">60.7</td>
             <td style="text-align: center;">52.1</td>
             <td style="text-align: center;">26.9</td>
@@ -531,6 +530,17 @@
             <td style="text-align: center;">48</td>
             <td style="text-align: center;">-</td>
             <td style="text-align: center;">49.0</td>
+        </tr>
+        <tr style="background-color: #e0f7e0;">
+            <td>Llava-CoT-11B</td>
+            <td style="text-align: center;">57.6</td>
+            <td style="text-align: center;">48.9</td>
+            <td style="text-align: center;">18.5</td>
+            <td style="text-align: center;">75.2</td>
+            <td style="text-align: center;">75.0</td>
+            <td style="text-align: center;">60.3</td>
+            <td style="text-align: center;">24.2</td>
+            <td style="text-align: center;">54.8</td>
         </tr>
         <tr style="background-color: #e0f7e0;">
             <td>Molmo-7B-D</td>
@@ -591,15 +601,15 @@
             <td style="text-align: center;">67.6</td>
         </tr>
         <tr style="background-color: #E0FFFF;">
-            <td>∆ Over Best Open-Source</td>
-            <td style="text-align: center;">+1.3</td>
-            <td style="text-align: center;">+2.0</td>
-            <td style="text-align: center;">+7.1</td>
-            <td style="text-align: center;">+0.6</td>
-            <td style="text-align: center;">+2.6</td>
-            <td style="text-align: center;">+3.7</td>
-            <td style="text-align: center;">+8.1</td>
-            <td style="text-align: center;">+4.4</td>
+            <td>∆ Over Best Open-Source<br>(~10B Scale)</td>
+            <td style="text-align: center;vertical-align: middle">+1.3</td>
+            <td style="text-align: center;vertical-align: middle">+2.0</td>
+            <td style="text-align: center;vertical-align: middle">+7.1</td>
+            <td style="text-align: center;vertical-align: middle">+0.6</td>
+            <td style="text-align: center;vertical-align: middle">+2.6</td>
+            <td style="text-align: center;vertical-align: middle">+3.7</td>
+            <td style="text-align: center;vertical-align: middle">+8.1</td>
+            <td style="text-align: center;vertical-align: middle">+4.4</td>
         </tr>
                 
     </tbody>
@@ -638,16 +648,6 @@
             <td style="text-align: center;">89.4</td>
             <td style="text-align: center;">85.9</td>
         </tr>
-        <!-- <tr style="background-color: #f2f2f2;">
-            <td>GPT-4v</td>
-            <td style="text-align: center;">78.2</td>
-            <td style="text-align: center;">78.5</td>
-            <td style="text-align: center;">75.1</td>
-            <td style="text-align: center;">88.4</td>
-            <td style="text-align: center;">61.4</td>
-            <td style="text-align: center;">80.0</td>
-            <td style="text-align: center;">81.0</td>
-        </tr> -->
         <tr style="background-color: #f2f2f2;">
             <td>Gemini-1.5-Pro</td>
             <td style="text-align: center;">94.4</td>
@@ -692,7 +692,7 @@
             <td style="text-align: center;">-</td>
         </tr>
         <tr style="background-color: #e0f7e0;">
-            <td>LLaVA-OV-72B(Single Image)</td>
+            <td>LLaVA-OV-72B (SI)</td>
             <td style="text-align: center;">85.1</td>
             <td style="text-align: center;">84.9</td>
             <td style="text-align: center;">74.6</td>
@@ -735,6 +735,16 @@
             <td style="text-align: center;">61.4</td>
         </tr>
         <tr style="background-color: #cce0ff;">
+            <td>Llama-3.2-11B-Vision-Ins</td>
+            <td style="text-align: center;">77.3</td>
+            <td style="text-align: center;">83.4</td>
+            <td style="text-align: center;">65.0</td>
+            <td style="text-align: center;">88.4</td>
+            <td style="text-align: center;">63.3</td>
+            <td style="text-align: center;">49.7</td>
+            <td style="text-align: center;">62.0</td>
+        </tr>
+        <tr style="background-color: #cce0ff;">
             <td>InternVL-2-8B</td>
             <td style="text-align: center;">83.8</td>
             <td style="text-align: center;">83.3</td>
@@ -745,7 +755,7 @@
             <td style="text-align: center;">62.5</td>
         </tr>
         <tr style="background-color: #cce0ff;">
-            <td>Qwen2-VL-7B</td>
+            <td>Qwen2-VL-7B-Ins</td>
             <td style="text-align: center;">83.0</td>
             <td style="text-align: center;">83.0</td>
             <td style="text-align: center;">76.5</td>
@@ -763,6 +773,16 @@
             <td style="text-align: center;">64.2</td>
             <td style="text-align: center;">-</td>
             <td style="text-align: center;">-</td>
+        </tr>
+        <tr style="background-color: #e0f7e0;">
+            <td>Llava-CoT-11B</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">67.0</td>
+            <td style="text-align: center;">44.8</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">-</td>
+            <td style="text-align: center;">65.3</td>
         </tr>
         <tr style="background-color: #e0f7e0;">
             <td>Molmo-7B-D</td>
@@ -818,14 +838,14 @@
             <td style="text-align: center;">70.8</td>
         </tr>
         <tr style="background-color: #E0FFFF;">
-            <td>∆ Over Best Open-Source</td>
-            <td style="text-align: center;">+2.4</td>
-            <td style="text-align: center;">+2.1</td>
-            <td style="text-align: center;">+2.2</td>
-            <td style="text-align: center;">+1.6</td>
-            <td style="text-align: center;">+0.6</td>
-            <td style="text-align: center;">-1.9</td>
-            <td style="text-align: center;">+2.2</td>
+            <td>∆ Over Best Open-Source<br>(~10B Scale)</td>
+            <td style="text-align: center;vertical-align: middle">+2.4</td>
+            <td style="text-align: center;vertical-align: middle">+2.1</td>
+            <td style="text-align: center;vertical-align: middle">+2.2</td>
+            <td style="text-align: center;vertical-align: middle">+1.6</td>
+            <td style="text-align: center;vertical-align: middle">+0.6</td>
+            <td style="text-align: center;vertical-align: middle">-1.9</td>
+            <td style="text-align: center;vertical-align: middle">+2.2</td>
         </tr>
                 
     </tbody>
@@ -913,7 +933,7 @@
             <td style="text-align: center;">54.0</td>
         </tr>
         <tr style="background-color: #cce0ff;">
-            <td>Qwen2-VL-7B</td>
+            <td>Qwen2-VL-7B-Ins</td>
             <td style="text-align: center;">41.6</td>
             <td style="text-align: center;">36.0</td>
             <td style="text-align: center;">66.7</td>
@@ -960,15 +980,15 @@
             <td style="text-align: center;">58.8</td>
         </tr>
         <tr style="background-color: #E0FFFF;">
-            <td>∆ Over Best Open-Source</td>
-            <td style="text-align: center;">+13.3</td>
-            <td style="text-align: center;">+4.3</td>
-            <td style="text-align: center;">-1.6</td>
-            <td style="text-align: center;">+2.2</td>
-            <td style="text-align: center;">+0.2</td>
-            <td style="text-align: center;">+0</td>
-            <td style="text-align: center;">+2.4</td>
-            <td style="text-align: center;">+0.6</td>
+            <td>∆ Over Best Open-Source<br>(~10B Scale)</td>
+            <td style="text-align: center;vertical-align: middle">+13.3</td>
+            <td style="text-align: center;vertical-align: middle">+4.3</td>
+            <td style="text-align: center;vertical-align: middle">-1.6</td>
+            <td style="text-align: center;vertical-align: middle">+2.2</td>
+            <td style="text-align: center;vertical-align: middle">+0.2</td>
+            <td style="text-align: center;vertical-align: middle">+0</td>
+            <td style="text-align: center;vertical-align: middle">+2.4</td>
+            <td style="text-align: center;vertical-align: middle">+0.6</td>
         </tr>
                 
     </tbody>
@@ -988,7 +1008,7 @@
                     
                     <div class="content has-text-justified">
                         <p>
-                            To further investigate the impact of dataset size on model performance, we analyze the Stage-2 training stage for single-image. Figure 3 shows the model's overall performance across 8 benchmarks as the training dataset size increases, with each node representing 2 million data points. The results are compared against those of Qwen2-VL-8B, InternVL2-8B, and LLaVA-OneVision-8B. This trend clearly demonstrates that expanding the scale of instruction data has a significant positive effect on model performance. This observation suggests that as more diverse instruction data is introduced, the model’s ability to handle complex tasks is enhanced.
+                            As shown in Figure 3, performance is tracked across benchmarks with training dataset size increasing in 2-million-sample intervals. Results are compared to three leading models: Llava-OneVision-7B & 72B and Llava-CoT. The findings demonstrate a positive correlation between training data scale and performance, indicating that diverse instruction data improves the model's ability to handle complex tasks. 
                         </p>
 
 <!-- <section class="hero">
@@ -999,8 +1019,8 @@
                     <div class="item">
                         <!-- Displaying an Image of Hybrid Instruction Tuning -->
                         <img src="static/images/mammoth_vl_scale.png" alt="Hybrid Instruction Tuning of MAmmoTH2-Plus" style="width: 100%; height: auto;" />
-                        <h2 class="subtitle" style="font-size: 16px; text-align: center; color: #888888;font-weight: normal;">
-                            Figure 3: Scaling effect of MAmmoTH-VL-8B on 8 representative datasets.
+                        <h2 class="subtitle" style="font-size: 16px; color: #888888;font-weight: normal;">
+                            Figure 3: Scaling effects of MAmmoTH-VL-8B on eight multimodal evaluation datasets. A simple rewriting approach using open models improves the quality of visual instruction data by eliciting chain-of-thought (CoT) reasoning. Training on this rewritten data demonstrates significant performance gains through increased model scale. Llava-OneVision-7B & 72B and Llava-CoT are included as references.
                         </h2>
                     </div>
                 <!-- </div>
@@ -1020,10 +1040,9 @@
                     
                     <div class="content has-text-justified">
                         <p>
-                            To verify the impact of model size on the quality of rewritten data, we conduct experiments by training four models with 500K data: first trained on the original dataset, second on the dataset rewritten by InternVL2-Llama3-76B and Qwen2.5-72B-Instruct, third on the dataset rewritten by Qwen2-VL-7B-Instruct and Qwen2.5-7B-Instruct, fourth on the dataset rewritten by InternVL2-8B and InternLM2-5-7B. Qwen2.5-72B-Instruct, Qwen2.5-7B-Instruct and InternLM2-5-7B are only used for rewriting caption data. Qwen2-VL-72B-Instruct, Qwen2-VL-7B-Instruct and InternVL2-8B are used for data filtering.
-                        </p>
+                            To assess the effect of model size on the quality of rewritten data, we conduct experiments using four models trained on a dataset of 500K samples. The first model is trained on the original dataset. The second model use data rewritten by InternVL2-Llama3-76B and Meta-Llama-3-70B-Instruct. The third model is trained on data rewritten by Qwen2-VL-7B-Instruct and Qwen2.5-7B-Instruct. The fourth model is trained on data rewritten by InternVL2-8B and InternLM2.5-7B. Among these, Qwen2.5-72B-Instruct, Qwen2.5-7B-Instruct, and InternLM2.5-7B are employed solely for rewriting caption data, while InternVL2-Llama3-76B, Qwen2-VL-7B-Instruct, and InternVL2-8B are used for data filtering.                        </p>
                         <p>
-                            The results in Figure 4 show that model trained on data rewritten based on 7B-similar-size model performs better in knowledge & reasoning and multi-interact & preference compared to the original data. However, its performance in chart & doc tasks is slightly worse, which may be due to the small model's inherent limitations in recognizing fine details in document-like images.
+                            As shown in Figure 4, our analysis reveals distinct patterns in model performance across different task categories. For knowledge & reasoning tasks, models trained on data rewritten by smaller models (approximately 7B parameters) achieve performance comparable to those using larger model rewrites. However, the impact of data rewriting varies significantly by task type. For chart and document-related tasks, rewriting with smaller models actually leads to performance degradation, while larger models provide modest improvements. This suggests that sophisticated visual understanding capabilities of larger models are crucial for effectively rewriting such data. In contrast, Multi Interact & Preference tasks demonstrate a clear correlation with model scale, where larger models excel in handling these complex scenarios that demand subtle understanding and nuanced preference modeling.
                         </p>
 
 <!-- <section class="hero">
