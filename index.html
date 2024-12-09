@@ -74,14 +74,8 @@
           <a class="navbar-item" href="https://tiger-ai-lab.github.io/MAmmoTH/">
             <b>MAmmoTH</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
           </a>
-          <a class="navbar-item" href="https://osu-nlp-group.github.io/TableLlama/">
-            TableLlama 
-            <a class="navbar-item" href="https://osu-nlp-group.github.io/MagicBrush/">
-              MagicBrush
-            </a>
-            <a class="navbar-item" href="https://osu-nlp-group.github.io/Mind2Web/">
-              Mind2Web
-            </a>
+          <a class="navbar-item" href="https://tiger-ai-lab.github.io/MAmmoTH2/">
+            <b>MAmmoTH2</b> <p style="font-size:18px; display: inline; margin-left: 5px;">🔥</p>
           </a>
           
           </a>
@@ -145,7 +139,7 @@
                         <sup>♢</sup>The University of Manchester
                         <br>
                     <!-- <span class="eql-cntrb"><small><sup>*</sup>Xiang Yue and Wenhu Chen are the leading authors of the project. They contributed equally to this project.</small></span> -->
-                            <span class="author-block"><a href="mailto:xyue2@andrew.cmu.edu">xyue2@andrew.cmu.edu</a>
+                    <span class="author-block">†Corresponding to: <a href="mailto:xyue2@andrew.cmu.edu">xyue2@andrew.cmu.edu</a>
                       <!-- , <a href="mailto:wenhuchen@uwaterloo.ca">wenhuchen@uwaterloo.ca</a> </span> -->
 
                         </div>
@@ -153,7 +147,7 @@
                         <div class="column has-text-centered">
                             <div class="publication-links">
                                 <span class="link-block">
-                          <a href="https://huggingface.co/datasets/MMSFT/MAmmoTH-VL-12M" target="_blank"
+                          <a href="https://huggingface.co/datasets/MAmmoTH-VL/MAmmoTH-VL-Instruct-12M" target="_blank"
                           class="external-link button is-normal is-rounded is-dark">
                           <span class="icon">
                             🤗
@@ -164,16 +158,16 @@
 
                                 <!-- Supplementary PDF link -->
                                 <span class="link-block">
-                        <a href="https://huggingface.co/MMSFT/MAmmoTH-VL-8B" target="_blank"
+                        <a href="https://huggingface.co/MAmmoTH-VL/MAmmoTH-VL-8B" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           🤗
                         </span>
-                                <span>Models</span>
+                                <span>Model</span>
                                 </a>
                                 </span>
                                 <span class="link-block">
-                        <a href="https://huggingface.co/spaces/MMSFT/MAmmoth-VL-8B" target="_blank"
+                        <a href="https://huggingface.co/spaces/paralym/MAmmoTH-VL-8B" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                             🤗
@@ -184,7 +178,7 @@
 
                                 <!-- Github link -->
                                 <span class="link-block">
-                      <a href="https://github.com/MAmmoTH-VL/MAmmoTH-VL" target="_blank"
+                      <a href="https://github.com/orgs/MAmmoTH-VL/MAmmoTH-VL" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fab fa-github"></i>
@@ -195,7 +189,7 @@
 
                                 <!-- ArXiv abstract Link -->
                                 <span class="link-block">
-                    <a href="https://arxiv.org/pdf/" target="_blank"
+                    <a href="https://arxiv.org/pdf/2412.05237" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="ai ai-arxiv"></i>
@@ -348,6 +342,47 @@
     </div>
 </section> -->
 
+
+<!--end begining introduction-->
+<!--begining WEBINSTRUCT-->
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <!-- Added inline style for right alignment -->
+                    <h2 class="title is-3">Distribution Comparison</h2>
+                    
+                    <div class="content has-text-justified">
+                        <p>
+                            To analyze the distributional differences between the original and rewritten data, we randomly sampled 80,000 examples from the dataset both before and after rewriting and visualized their distributions using t-SNE to project the instructions onto a two-dimensional plot in Figure 3. The resulting figure reveals two key takeaways:
+                        <p>
+                            (1) The rewritten data exhibits significant overlap with the original data, indicating that it retains the core characteristics of the original distribution. This ensures that the rewritten data preserves the foundational structure of the dataset.
+                        <p>
+                            (2) The rewritten data extends beyond the boundaries of the original distribution, demonstrating that it introduces new dimensions or variations, which shows that rewriting enhances the dataset by broadening its scope while maintaining its original essence.
+                        </p>
+                        <p>
+                            Based on this observation, during the experimental validation phase, we utilize a mixed dataset consisting of 70% rewritten data and 30% original data to train the model. 
+                        </p>
+<!-- Image3 carousel -->
+    
+<!-- <section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-four-fifths"> -->
+                    <div class="item">
+                        <!-- Displaying an Image of Hybrid Instruction Tuning -->
+                        <img src="static/images/mammoth_vl_distri.jpg" alt="Hybrid Instruction Tuning of MAmmoTH2-Plus" style="width: 100%; height: auto;" />
+                        <h2 class="subtitle" style="font-size: 16px; color: #888888;font-weight: normal;">
+                            Figure 3: The t-SNE data distribution plot demonstrates how the rewritten data expands beyond the original dataset, increasing topic diversity and enhancing coverage of complex queries and reasoning. 
+                        </h2>
+                    </div>
+                <!-- </div>
+            </div>
+        </div>
+    </div>
+</section> -->
 
 <section class="hero">
     <div class="hero-body">
@@ -1009,7 +1044,7 @@
                     
                     <div class="content has-text-justified">
                         <p>
-                            As shown in Figure 3, performance is tracked across benchmarks with training dataset size increasing in 2-million-sample intervals. Results are compared to three leading models: Llava-OneVision-7B & 72B and Llava-CoT. The findings demonstrate a positive correlation between training data scale and performance, indicating that diverse instruction data improves the model's ability to handle complex tasks. 
+                            As shown in Figure 4, performance is tracked across benchmarks with training dataset size increasing in 2-million-sample intervals. Results are compared to three leading models: Llava-OneVision-7B & 72B and Llava-CoT. The findings demonstrate a positive correlation between training data scale and performance, indicating that diverse instruction data improves the model's ability to handle complex tasks. 
                         </p>
 
 <!-- <section class="hero">
@@ -1021,7 +1056,7 @@
                         <!-- Displaying an Image of Hybrid Instruction Tuning -->
                         <img src="static/images/mammoth_vl_scale.png" alt="Hybrid Instruction Tuning of MAmmoTH2-Plus" style="width: 100%; height: auto;" />
                         <h2 class="subtitle" style="font-size: 16px; color: #888888;font-weight: normal;">
-                            Figure 3: Scaling effects of MAmmoTH-VL-8B on eight multimodal evaluation datasets. A simple rewriting approach using open models improves the quality of visual instruction data by eliciting chain-of-thought (CoT) reasoning. Training on this rewritten data demonstrates significant performance gains through increased model scale. Llava-OneVision-7B & 72B and Llava-CoT are included as references.
+                            Figure 4: Scaling effects of MAmmoTH-VL-8B on eight multimodal evaluation datasets. A simple rewriting approach using open models improves the quality of visual instruction data by eliciting chain-of-thought (CoT) reasoning. Training on this rewritten data demonstrates significant performance gains through increased model scale. Llava-OneVision-7B & 72B and Llava-CoT are included as references.
                         </h2>
                     </div>
                 <!-- </div>
@@ -1043,7 +1078,7 @@
                         <p>
                             To assess the effect of model size on the quality of rewritten data, we conduct experiments using four models trained on a dataset of 500K samples. The first model is trained on the original dataset. The second model use data rewritten by InternVL2-Llama3-76B and Meta-Llama-3-70B-Instruct. The third model is trained on data rewritten by Qwen2-VL-7B-Instruct and Qwen2.5-7B-Instruct. The fourth model is trained on data rewritten by InternVL2-8B and InternLM2.5-7B. Among these, Qwen2.5-72B-Instruct, Qwen2.5-7B-Instruct, and InternLM2.5-7B are employed solely for rewriting caption data, while InternVL2-Llama3-76B, Qwen2-VL-7B-Instruct, and InternVL2-8B are used for data filtering.                        </p>
                         <p>
-                            As shown in Figure 4, our analysis reveals distinct patterns in model performance across different task categories. For knowledge & reasoning tasks, models trained on data rewritten by smaller models (approximately 7B parameters) achieve performance comparable to those using larger model rewrites. However, the impact of data rewriting varies significantly by task type. For chart and document-related tasks, rewriting with smaller models actually leads to performance degradation, while larger models provide modest improvements. This suggests that sophisticated visual understanding capabilities of larger models are crucial for effectively rewriting such data. In contrast, Multi Interact & Preference tasks demonstrate a clear correlation with model scale, where larger models excel in handling these complex scenarios that demand subtle understanding and nuanced preference modeling.
+                            As shown in Figure 5, our analysis reveals distinct patterns in model performance across different task categories. For knowledge & reasoning tasks, models trained on data rewritten by smaller models (approximately 7B parameters) achieve performance comparable to those using larger model rewrites. However, the impact of data rewriting varies significantly by task type. For chart and document-related tasks, rewriting with smaller models actually leads to performance degradation, while larger models provide modest improvements. This suggests that sophisticated visual understanding capabilities of larger models are crucial for effectively rewriting such data. In contrast, Multi Interact & Preference tasks demonstrate a clear correlation with model scale, where larger models excel in handling these complex scenarios that demand subtle understanding and nuanced preference modeling.
                         </p>
 
 <!-- <section class="hero">
@@ -1055,7 +1090,7 @@
                         <!-- Displaying an Image of Hybrid Instruction Tuning -->
                         <img src="static/images/ablation_rewrite_model.png" alt="Hybrid Instruction Tuning of MAmmoTH2-Plus" style="width: 100%; height: auto;" />
                         <h2 class="subtitle" style="font-size: 16px; text-align: center; color: #888888;font-weight: normal;">
-                            Figure 4: Performance of data rewritten by different models on three benchmark subsets.
+                            Figure 5: Performance of data rewritten by different models on three benchmark subsets.
                         </h2>
                     </div>
                 <!-- </div>
